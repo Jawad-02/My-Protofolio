@@ -1,0 +1,268 @@
+main {
+    width: 100%;
+    background-color: #222d32;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    background-image: url(../imges/me1.png), url(../imges/BG.png);
+    background-size: 62vh,cover;
+    background-repeat: no-repeat;
+    background-position: bottom left calc(50% + 80px),center;
+    z-index: 100;
+}
+.main-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 420px;
+}
+.main-intro h1{
+    font-size: 5rem;
+    line-height: 1.1;
+}
+main p{
+    font-size: 1.4rem;
+    line-height: 1.75;
+}
+main a{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    display: block;
+    height: 36px;
+    line-height: 30px;
+    padding: 0 20px;
+    border: 2px var(--main-color) solid;
+    width: fit-content;
+    transition: all 250ms;
+}
+main a:hover{
+    border: 2px var(--navbar-color) solid;
+    background-color: var(--main-color);
+}
+main .main-quotes p{
+    border-left: 2px solid var(--main-color);
+    padding: 0 10px;
+    margin: 40px 0;
+}
+main .main-quotes p:nth-child(2){
+    margin-left: 100px;
+}
+main .main-intro{
+    /* position: relative;
+    right: 20vh; */
+    padding-bottom: 8vh;
+}
+main .main-quotes{
+    /* position: relative;
+    left: 20vh; */
+    padding-bottom: 8vh;
+}
+
+/* CATEGORY SECTION */
+
+.index-category{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fff;
+
+}
+.index-category-flex{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.index-category p{
+    color: #111;
+    text-align: center;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+.index-category-box{
+    width: 200px;
+    height: 200px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all ease-in-out 350ms;
+}
+.index-category-box:nth-child(2){
+    background-image: url(../imges/sertificate/Screenshot-1.png);
+}
+.index-category-box:nth-child(3){
+    background-image: url(../imges/sertificate/back-end-development-banner-concept-260nw-422011339-1.png);
+}
+.index-category-box:nth-child(4){
+    background-image: url(../imges/sertificate/Become-UI-Designer-in-2023.png);
+}
+.index-category-box:nth-child(5){
+    background-image: url(../imges/sertificate/images.jpg);
+}
+.dark-overlay{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--navbar-color);
+    opacity: 0.5;
+    transition: all ease-in-out 270ms;
+}
+.index-category-box:hover{
+    width: 210px;
+    height: 210px;
+    background-size: contain;
+}
+
+.index-category-box:hover .dark-overlay{
+
+    opacity: 0;
+
+}
+.index-category-box:hover h3{
+    display: none;
+}
+.index-category-box h3{
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    text-shadow: -2px 2px 4px #000;
+    z-index: 100;
+}
+
+/* ABOUT SECTION */
+
+.index-about{
+    width: 100%;
+    padding: 60px 0;
+    background-color: var(--navbar-color);
+}
+.index-abou-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+.index-about-img img{
+    width: 300px;
+    border-radius: 300px;
+}
+.index-about-text{
+    flex-basis: 455px;
+}
+.index-about-text p{
+    padding: 20px 0;
+}
+.index-about-text a{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    display: block;
+    height: 36px;
+    line-height: 30px;
+    padding: 0 20px;
+    border: 2px var(--main-color) solid;
+    width: fit-content;
+    transition: all 250ms;
+}
+.index-about-text a:hover{
+    border: 2px var(--navbar-color) solid;
+    background-color: var(--main-color);
+}
+.index-about-skill{
+    flex-basis: 350px;
+}
+.index-about-skill-bar{
+    width: calc(100% - 8px) !important;
+    height: 20px;
+    border: solid 4px #0B0f16 ;
+}
+.index-about-skill-bar-fill{
+    height: 100%;
+    background-color: var(--main-color);
+}
+.htmlcss{
+    width: 95%;
+}
+.ds{
+    width: 55%;
+}
+.js{
+    width: 75%;
+}
+.php{
+    width: 90%;
+}
+.db{
+    width: 75%;
+}
+@media only screen and (max-width: 600px) {
+
+    main .main-quotes{
+        display: none;
+    }
+    .main-flex{
+        height: calc(100vh - 60px);
+        align-items: flex-end;
+    }
+    main .main-intro{
+        padding-bottom: 8vh;
+    }
+    .main-intro h1{
+        font-size: 5rem;
+        line-height: 1.1;
+        text-align: center;
+        padding-bottom: 18px;
+    }
+    main p{
+        text-align: center;
+        padding: 0 10px;
+        font-size: 1.6rem;
+        line-height: 1.75;
+    }
+    main a{
+        margin: 30px auto;
+    }
+    .index-category-flex{
+        row-gap: 10px;
+    }
+    .index-category{
+        padding: 40px 0 20px;
+    }
+    .index-category p{
+        padding-bottom: 20px;
+    }
+    .index-category-box{
+        width: 100%;
+        height: 160px;
+    }
+    .index-abou-flex{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .index-about-img{
+        width: 60%;
+    }
+    .index-about-img img{
+        width: 100%;
+    }
+    .index-about-text{
+        flex-basis: 100%;
+    }
+    .index-about-text h2{
+        text-align: center;
+    }
+    .index-about-text p{
+        text-align: center;
+    }
+    .index-about-text a{
+        margin: 0 auto 10px;
+    }
+
+}
